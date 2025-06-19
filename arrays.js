@@ -34,3 +34,9 @@ console.log("Accessing an array using loop:");
 for (let i = 0; i < fruits.length; i++) {
   console.log(fruits[i]);
 }
+
+console.log(fruits);
+//Spread operator
+let newArray = [...fruits, "A", "B"];
+console.log(newArray);
+console.log(fruits);
