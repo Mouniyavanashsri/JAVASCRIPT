@@ -27,3 +27,35 @@ const arrowFuncVar = () => {
 };
 
 arrowFuncVar();
+
+//Filter, Map, Reduce
+let nums = [1, 2, 3, 4, 5];
+
+let evens = nums.filter((n) => {
+  return n % 2 === 0;
+});
+
+let newEvens = nums.filter((n) => n % 2 === 0);
+console.log(evens);
+
+let newList = [];
+for (let i = 0; i < nums.length; i++) {
+  if (nums[i] % 2 === 0) {
+    newList.push(nums[i]);
+  }
+}
+console.log(newList);
+
+// Map method
+console.log("Using Map methos");
+let squares = nums.map((n) => {
+  return n * n;
+});
+console.log(squares);
+
+//Reduce method
+console.log("Using Reduce method");
+let newSum = nums.reduce((sum, n) => {
+  return sum + n;
+}, (sum = 0));
+console.log(newSum);
