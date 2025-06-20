@@ -6,3 +6,8 @@ console.log(name);
 console.log(age);
 console.log(price);
 console.log(isStudent);
+
+//Template strings
+let newString = `My Name is ${name}`;
+console.log(newString);
+console.log(`$${price}`);
